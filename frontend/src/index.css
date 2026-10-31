@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#FAF8F5] text-slate-800 font-sans;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Glassmorphism */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-dark {
+  background: rgba(12, 43, 66, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E8F5E9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4ADE80;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #22C55E;
+}
+
+/* ==========================================================================
+   LIGHT GREEN ACCENT PALETTE (GUARANTEED HIGHLIGHTS & HOVERS ON ALL PAGES)
+   ========================================================================== */
+
+:root {
+  --theme-accent-50: #F2FBF6;
+  --theme-accent-100: #E1F7EA;
+  --theme-accent-200: #B8EFD0;
+  --theme-accent-300: #82E2B0;
+  --theme-accent-400: #4ADE80;
+  --theme-accent-500: #22C55E;
+  --theme-accent-600: #16A34A;
+  --theme-accent-700: #15803D;
+  --theme-accent-800: #166534;
+  --theme-accent-900: #14532D;
+}
+
+/* Text highlights */
+.text-gold-200, .text-gold-200\/80, .text-gold-200\/90 { color: rgba(184, 239, 208, 0.9) !important; }
+.text-gold-300 { color: #82E2B0 !important; }
+.text-gold-400 { color: #4ADE80 !important; }
+.text-gold-500 { color: #22C55E !important; }
+.text-gold-600 { color: #16A34A !important; }
+.text-gold-700 { color: #15803D !important; }
+
+/* Backgrounds & Badges */
+.bg-gold-50 { background-color: #F2FBF6 !important; }
+.bg-gold-100 { background-color: #E1F7EA !important; }
+.bg-gold-200 { background-color: #B8EFD0 !important; }
+.bg-gold-300 { background-color: #82E2B0 !important; }
+.bg-gold-400 { background-color: #4ADE80 !important; }
+.bg-gold-500 { background-color: #22C55E !important; }
+.bg-gold-400\/10 { background-color: rgba(74, 222, 128, 0.1) !important; }
+.bg-gold-400\/20 { background-color: rgba(74, 222, 128, 0.2) !important; }
+
+/* Borders & Rings */
+.border-gold-400 { border-color: #4ADE80 !important; }
+.border-gold-500 { border-color: #22C55E !important; }
+.border-gold-400\/20 { border-color: rgba(74, 222, 128, 0.2) !important; }
+.border-gold-400\/30 { border-color: rgba(74, 222, 128, 0.3) !important; }
+.border-gold-400\/40 { border-color: rgba(74, 222, 128, 0.4) !important; }
+
+.ring-gold-400 { --tw-ring-color: #4ADE80 !important; }
+.focus\:ring-gold-400:focus { --tw-ring-color: #4ADE80 !important; }
+.focus-within\:ring-gold-400:focus-within { --tw-ring-color: #4ADE80 !important; }
+
+/* Light green gradients for buttons & underlines */
+.from-gold-300 { --tw-gradient-from: #82E2B0 var(--tw-gradient-from-position) !important; --tw-gradient-to: rgb(130 226 176 / 0) var(--tw-gradient-to-position) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important; }
+.from-gold-400 { --tw-gradient-from: #4ADE80 var(--tw-gradient-from-position) !important; --tw-gradient-to: rgb(74 222 128 / 0) var(--tw-gradient-to-position) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important; }
+.from-gold-500 { --tw-gradient-from: #22C55E var(--tw-gradient-from-position) !important; --tw-gradient-to: rgb(34 197 94 / 0) var(--tw-gradient-to-position) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important; }
+
+.via-gold-300 { --tw-gradient-to: rgb(130 226 176 / 0) var(--tw-gradient-to-position) !important; --tw-gradient-stops: var(--tw-gradient-from), #82E2B0 var(--tw-gradient-via-position), var(--tw-gradient-to) !important; }
+.via-gold-400 { --tw-gradient-to: rgb(74 222 128 / 0) var(--tw-gradient-to-position) !important; --tw-gradient-stops: var(--tw-gradient-from), #4ADE80 var(--tw-gradient-via-position), var(--tw-gradient-to) !important; }
+.via-gold-500 { --tw-gradient-to: rgb(34 197 94 / 0) var(--tw-gradient-to-position) !important; --tw-gradient-stops: var(--tw-gradient-from), #22C55E var(--tw-gradient-via-position), var(--tw-gradient-to) !important; }
+
+.to-gold-200 { --tw-gradient-to: #B8EFD0 var(--tw-gradient-to-position) !important; }
+.to-gold-300 { --tw-gradient-to: #82E2B0 var(--tw-gradient-to-position) !important; }
+.to-gold-400 { --tw-gradient-to: #4ADE80 var(--tw-gradient-to-position) !important; }
+.to-gold-500 { --tw-gradient-to: #22C55E var(--tw-gradient-to-position) !important; }
+.to-gold-600 { --tw-gradient-to: #16A34A var(--tw-gradient-to-position) !important; }
+
+.shadow-luxury-gold { box-shadow: 0 10px 25px -5px rgba(74, 222, 128, 0.35) !important; }
+
+/* Selection highlight */
+::selection {
+  background-color: #4ADE80 !important;
+  color: #071A2A !important;
+}
+
+/* Hover effects */
+.hover\:text-gold-300:hover { color: #82E2B0 !important; }
+.hover\:text-gold-400:hover { color: #4ADE80 !important; }
+.hover\:text-gold-600:hover { color: #16A34A !important; }
+
+.hover\:bg-gold-300:hover { background-color: #82E2B0 !important; }
+.hover\:bg-gold-400:hover { background-color: #4ADE80 !important; }
+.hover\:bg-gold-500:hover { background-color: #22C55E !important; }
+.hover\:border-gold-400:hover { border-color: #4ADE80 !important; }
+.hover\:border-gold-400\/40:hover { border-color: rgba(74, 222, 128, 0.4) !important; }
+
+.hover\:from-gold-400:hover { --tw-gradient-from: #4ADE80 var(--tw-gradient-from-position) !important; --tw-gradient-to: rgb(74 222 128 / 0) var(--tw-gradient-to-position) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important; }
+.hover\:from-gold-500:hover { --tw-gradient-from: #22C55E var(--tw-gradient-from-position) !important; --tw-gradient-to: rgb(34 197 94 / 0) var(--tw-gradient-to-position) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important; }
+.hover\:to-gold-500:hover { --tw-gradient-to: #22C55E var(--tw-gradient-to-position) !important; }
+.hover\:to-gold-600:hover { --tw-gradient-to: #16A34A var(--tw-gradient-to-position) !important; }
+
+.group:hover .group-hover\:text-gold-300 { color: #82E2B0 !important; }
+.group:hover .group-hover\:text-gold-600 { color: #16A34A !important; }
+.group:hover .group-hover\:bg-gold-400 { background-color: #4ADE80 !important; }
